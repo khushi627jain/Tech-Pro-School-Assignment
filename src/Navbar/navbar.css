@@ -1,0 +1,56 @@
+
+
+
+.parent-navbar{
+    width: 85%;
+    justify-content: space-between;
+   margin: "auto";
+    padding-top: 1vw; 
+    align-items: center;
+    padding-bottom: 1vw;
+}
+.parent{
+   
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 0;
+}
+.parent-navbar>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3vw;
+}
+.list-option ul{
+    display: flex;
+ list-style: none;
+    gap: 4vw;
+    align-items: center
+}
+
+
+.explore-details{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.explore-details ul{
+    list-style: none;
+}
+.explore-details ul li{
+ margin: 10px;   
+
+}
+.explore-details ul li:hover{
+    cursor: pointer;
+   color: gray;
+}
+
+.explore-btn:hover .explore-details{
+display: block;
+}

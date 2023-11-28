@@ -1,0 +1,57 @@
+export const theme={
+    primaryMainColor:"#fff",
+    primaryTextColor:"#1a202c",
+    themeColor:"#e1b8d4"
+}
+
+
+export let arr=[
+    {
+      colorName:"#FF0000"
+    },
+    {
+      colorName:"#00FFFF"
+    },
+    {
+      colorName:"#FFFF00"
+    },
+    {
+      colorName:"#FF00FF"
+    },
+    {
+      colorName:"#FFC0CB"
+    },
+    {
+      colorName:"#7FFFD4"
+    },
+    {
+      colorName:"#00FF00"
+    },
+    {
+      colorName:"#C0C0C0"
+    },
+    {
+      colorName:"#7E3517"
+    },
+    {
+      colorName:"#2F0909"
+    },
+     {
+      colorName:"#550A35"
+     },
+     {
+      colorName:"#CC7A8B"
+     },
+     {
+      colorName:"#C25283"
+     },
+     {
+      colorName:"#C45AEC"
+     },
+     {
+      colorName:"#915F6D"
+     },
+     {
+      colorName:"#B041FF"
+     },
+  ]

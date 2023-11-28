@@ -1,24 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './Navbar/navbar';
+import CourseCard from './Components/CourseCard';
+import {Box} from "@chakra-ui/react"
+import { useSelector } from 'react-redux';
 
 function App() {
+  const { textColor, themeColor, Color,currentTheme } = useSelector(store => store) 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box>
+   <Navbar textColor={textColor} themeColor={themeColor} Color={Color} currentTheme={currentTheme}/>
+   <CourseCard textColor={textColor} themeColor={themeColor} Color={Color}/>
+   </Box>
   );
 }
 
