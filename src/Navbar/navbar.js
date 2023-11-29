@@ -9,10 +9,6 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
 } from '@chakra-ui/react'
 import "./navbar.css"
 import { useDispatch } from 'react-redux'
@@ -21,11 +17,9 @@ import { FiSun } from "react-icons/fi";
 import { MdDarkMode } from "react-icons/md";
 import { arr } from '../Theme/theme'
 import { TbEggFilled } from "react-icons/tb";
-import { GiHamburgerMenu } from "react-icons/gi";
+
 
 const Navbar = ({ textColor, themeColor, Color, currentTheme }) => {
-
-
 
   let listStyling = { color: Color, textDecoration: "underLine", textUnderlineOffset: "5px" }
   const dispatch = useDispatch()
@@ -83,7 +77,7 @@ const Navbar = ({ textColor, themeColor, Color, currentTheme }) => {
             </Box>
             <InputGroup display={["none","none","none","flex","flex"]} pl="10px" color={textColor} size='md'>
               <Input focusBorderColor={Color} color={Color} w="17vw" placeholder="What do you want to learn ?" variant="outline" />
-              <InputRightAddon color={themeColor} bg={textColor} children=<Search2Icon /> />
+              <InputRightAddon color={themeColor} bg={Color} children=<Search2Icon /> />
             </InputGroup>
           </Box>
           <Box className='list-option'>
